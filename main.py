@@ -161,11 +161,6 @@ class Video(Resource):
 api.add_resource(Video, "/video/<int:video_id>")
 
 
-if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()  # Creates the database
-    app.run(debug=True)
-
 
 
         
@@ -185,7 +180,7 @@ api.add_resource(Video, "/video/<int:video_id>")
 
 if __name__ == '__main__':
     with app.app_context():
-        db.create_all()  # Creates the database
+        db.create_all()  # Create database
     app.run(debug=True)
 
 
